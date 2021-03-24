@@ -35,6 +35,7 @@ class CookieBannerContent extends React.Component {
       policy: policyStyle,
       buttonWrapper: buttonWrapperStyle,
       button: buttonStyle,
+      acceptButton: acceptButtonStyle,
     } = { ...bannerStyle, ...styles };
 
     return (
@@ -49,6 +50,9 @@ class CookieBannerContent extends React.Component {
           <a href={policyLink} className="react-cookie-law-policy" style={policyStyle}>{privacyPolicyLinkText}</a>
 
           <div className="react-cookie-law-button-wrapper" style={buttonWrapperStyle}>
+            <button type="button" className="react-cookie-law-accept-btn" style={acceptButtonStyle || buttonStyle} onClick={() => onAcceptAll()}>
+              <span>{acceptButtonText}</span>
+            </button>
             {
               showPreferences
                 ? (
@@ -62,9 +66,6 @@ class CookieBannerContent extends React.Component {
                   </button>
                 )
             }
-            <button type="button" className="react-cookie-law-accept-btn" style={buttonStyle} onClick={() => onAcceptAll()}>
-              <span>{acceptButtonText}</span>
-            </button>
             { 
               showDeclineButton && (
               <button type="button" className="react-cookie-law-accept-btn" style={buttonStyle} onClick={() => onDecline()}>
