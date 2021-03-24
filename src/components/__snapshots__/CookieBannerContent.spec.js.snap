@@ -64,32 +64,6 @@ exports[`CookieBannerContent component should be rendered 1`] = `
       }
     >
       <button
-        className="react-cookie-law-manage-btn"
-        onClick={[Function]}
-        style={
-          Object {
-            "backgroundColor": "#000000",
-            "color": "#ffffff",
-            "cursor": "pointer",
-            "display": "inline-block",
-            "fontSize": "10pt",
-            "fontWeight": "400",
-            "marginLeft": "5px",
-            "marginRight": "5px",
-            "minWidth": "80px",
-            "padding": "3px",
-            "textAlign": "center",
-            "textDecoration": "none",
-            "whiteSpace": "nowrap",
-          }
-        }
-        type="button"
-      >
-        <span>
-          Mange my cookies
-        </span>
-      </button>
-      <button
         className="react-cookie-law-accept-btn"
         onClick={[Function]}
         style={
@@ -113,6 +87,32 @@ exports[`CookieBannerContent component should be rendered 1`] = `
       >
         <span>
           Accept all
+        </span>
+      </button>
+      <button
+        className="react-cookie-law-manage-btn"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#000000",
+            "color": "#ffffff",
+            "cursor": "pointer",
+            "display": "inline-block",
+            "fontSize": "10pt",
+            "fontWeight": "400",
+            "marginLeft": "5px",
+            "marginRight": "5px",
+            "minWidth": "80px",
+            "padding": "3px",
+            "textAlign": "center",
+            "textDecoration": "none",
+            "whiteSpace": "nowrap",
+          }
+        }
+        type="button"
+      >
+        <span>
+          Mange my cookies
         </span>
       </button>
     </div>
